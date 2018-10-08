@@ -1,0 +1,6 @@
+struct node * del(struct node *ptr)
+{
+ptr->next=root->next;
+root=ptr;
+
+}
