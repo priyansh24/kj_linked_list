@@ -1,4 +1,4 @@
-#include<iostream.h>
+#include<iostream>
 using namespace std;
 
 struct node{
@@ -12,7 +12,10 @@ void main(){
   
 }
 
-Node* createNode(int data){
+Node* createNode(){
+  int num;
+  cin>>num;
+  
   Node* ptr;
   ptr=(Node*) malloc(sizeof(Node));
   ptr->data=data;
