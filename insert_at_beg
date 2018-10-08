@@ -1,0 +1,7 @@
+void insert_at_beg()
+{
+  NODE* temp=createNode();
+  if(start!=null)
+  temp->next=start;
+  start=temp;
+}
