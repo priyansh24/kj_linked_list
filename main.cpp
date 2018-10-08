@@ -18,8 +18,19 @@ Node* createNode(){
   
   Node* ptr;
   ptr=(Node*) malloc(sizeof(Node));
-  ptr->data=data;
+  ptr->data=num;
   ptr->next=NULL;
   
   return ptr;
+}
+
+void InsertAtEnd()
+{
+Node * temp=createNode();
+  Node * temp1=start;
+  while(temp1->next!=NULL)
+  {
+  temp1=temp1->next;
+  }
+temp1->next=temp;
 }
